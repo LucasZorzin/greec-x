@@ -1,0 +1,42 @@
+// 
+// Images
+//
+
+.section2__image {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+// PC
+@media (min-width: 992px) {
+.section2__image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+
+
+///FOOTER ICONS
+.img-social{
+    width:1.3rem;
+}
+
+.center{
+    display: block;
+    // margin-top: 70px;
+    text-align: center;
+    align-items: center;
+}

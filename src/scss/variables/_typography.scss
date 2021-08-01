@@ -1,0 +1,173 @@
+//
+// Typography
+//
+
+///Section 1 and 3
+.section__title {
+    text-align: center;
+    margin-top: 10px+8px;
+    margin-left: 0px;
+    font-size: 1.8rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+}
+
+.section__h4 {
+    margin: 8px 8px 8px 0px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.section__p {
+    text-align: center;
+    margin: 0px 5px 0px 5px;
+}
+
+// PC
+@media (min-width: 992px) {
+    .section__title {
+        font-size: 2.813rem;
+        font-family: "Manrope", sans-serif;
+        text-align: start;
+    }
+
+    .section__h4 {
+        margin: 8px 8px 8px 0px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 0.8rem;
+        text-align: start;
+    }
+
+    .section__p {
+        text-align: start;
+        margin: 0px 25px 0px 0px;
+    }
+}
+
+///Section 2
+
+.section2__title {
+    padding-top: 30px;
+    font-size: 1.2rem;
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    color: white;
+    /* margin-top: 50px; */
+    font-weight: 500;
+    margin: 0px 12px 0px 12px;
+}
+
+.section2__subtitle {
+    margin: 10px 0px 8px 0px;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+// PC
+@media (min-width: 992px) {
+    .section2__title {
+        padding-top: 50px !important;
+        font-size: 2.5rem;
+        font-family: "Manrope", sans-serif;
+        text-align: center;
+        color: white;
+        /* margin-top: 50px; */
+        font-weight: bold;
+        margin-left: 0px;
+    }
+
+    .section2__subtitle {
+        margin-top: 20px;
+        font-family: "Raleway", sans-serif;
+        font-size: 0.999rem;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+    }
+}
+
+//small screens
+@media (max-width: 330px) {
+    .section2__title {
+        padding-top: 50px !important;
+        font-size: 0.8rem;
+        font-family: "Manrope", sans-serif;
+        text-align: center;
+        color: white;
+        /* margin-top: 50px; */
+        font-weight: bold;
+        margin-left: 0px;
+    }
+
+    .section2__subtitle {
+        margin-top: 20px;
+        font-family: "Raleway", sans-serif;
+        font-size: 0.7rem;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+    }
+}
+
+.footer {
+    .footer__title {
+        font-size: 1.5rem;
+        font-family: 'Raleway', sans-serif;
+        text-decoration:none;
+        color:white;
+    }
+
+    .footer__title:hover {
+        color:$pink;
+    }
+
+    .footer__subtitle {
+        font-size: 0.7rem;
+        font-family: 'Raleway', sans-serif;
+        text-decoration:none!important;
+        color:white!important;
+    }
+
+    .footer__subtitle:hover {
+        color:$pink!important;
+    }
+}
+
+.small{
+    font-size: 0.65rem!important;
+}
+
+.center-text{
+    text-align:center;
+}
+
+.center-text__color{
+    color:$pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/// Override Bootstrap typography variables
+
+$font-family-base: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$headings-font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$headings-font-weight: 800;

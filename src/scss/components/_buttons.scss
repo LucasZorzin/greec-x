@@ -1,0 +1,129 @@
+//
+// Buttons
+//
+.btn {
+  border: none !important;
+}
+
+.btn-primary {
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.btn-style {
+  text-transform: uppercase;
+  padding: 0.5rem 3rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border-radius: 0;
+  background-image: $boton-background-image;
+}
+
+.btn-style:hover {
+  transform: scale(1.03, 1.03);
+  background-image: $boton-background-image-hover;
+}
+
+/// section 2 button
+.buttons-section2 {
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px 20px 20px;
+}
+
+.buttons-section2__margin {
+  margin: 5px 20px 5px 20px;
+}
+
+.buttons-section2__margin-style {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  padding: 2px 10px 2px 10px;
+  color: white;
+  border: transparent;
+  background-image: $boton-background-image2;
+  border-radius: 0px;
+  // margin: 0px 30px 0px 30px;
+}
+
+.buttons-section2__margin-style:hover {
+  transform: scale(1.03, 1.03);
+  background-image: $boton-background-image-hover2;
+}
+
+// PC
+@media (min-width: 992px) {
+  .buttons-section2__margin-style {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8rem;
+    color: white;
+    border: transparent;
+    background-image: $boton-background-image2;
+    border-radius: 0px;
+    margin: 0px 30px 40px 30px;
+    padding: 20px 45px 20px 45px;
+  }
+}
+
+//narrow screens
+@media (max-width: 330px) {
+  .buttons-section2__margin {
+    margin: 5px 8px 5px 8px;
+  }
+}
+
+/// section 3 button
+
+.section__button3 {
+  margin: 5px 20px 5px 0px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.section__button3-style {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  padding: 2px 30px 2px 30px;
+  color: white;
+  border: transparent;
+  background-image: $boton-background-image2;
+  border-radius: 0px;
+  margin: 10px 0px 0px 0px;
+  
+}
+
+.section__button3-style:hover {
+  transform: scale(1.03, 1.03);
+  background-image: $boton-background-image-hover2;
+}
+
+// PC
+@media (min-width: 992px) {
+  .section__button3 {
+    margin: 5px 20px 5px 0px;
+    display: flex;
+    align-content: initial;
+    align-items: initial;
+    justify-content: initial;
+    text-decoration: none;
+  }
+}
+
+.btnFooter {
+  color: #ffffff00;
+  background-color: #ffffff00;
+}
+
+.btnFooter:hover {
+  color: #ffffff00;
+  background-color: #ffffff00;
+}
+
+.img-social:hover {
+  color: #ffffff00;
+  background-color: #ffffff00;
+}
