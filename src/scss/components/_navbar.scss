@@ -1,0 +1,126 @@
+//
+// Navbar
+//
+
+.navbar-custom {
+    padding-top: 0.2px !important;
+    padding-bottom: 0.2px !important;
+    background-color: rgba(0, 0, 0, 0.91);
+
+    .navbar-brand {
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+        margin-right: 0px !important;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                text-transform: uppercase;
+                font-family: "Raleway", sans-serif;
+                font-size: 0.5rem;
+                letter-spacing: 0.188rem;
+                color: rgba(255, 255, 255, 0.75);
+            }
+            .nav-link:hover {
+                color: rgba(255, 255, 255, 0.99);
+            }
+
+            .nav-link--padding-top {
+                padding-top: 20px;
+            }
+
+            .nav-link--padding-bottom {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.navbar-dark {
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0);
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
+// PC
+@media (min-width: 992px) {
+    .navbar-custom {
+        padding-top: 0.2px !important;
+        padding-bottom: 0.2px !important;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        .navbar-brand {
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            font-weight: 700;
+            margin-right: 0px !important;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    text-transform: uppercase;
+                    font-family: "Raleway", sans-serif;
+                    font-size: 0.495rem;
+                    letter-spacing: 0.188rem;
+                }
+
+                .nav-link--padding-top {
+                    padding-top: 0.513rem;
+                }
+
+                .nav-link--padding-bottom {
+                    padding-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+.dropdown-item {
+    font-size: x-small;
+    color: rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.5rem;
+    letter-spacing: 0.188rem;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(224, 224, 224, 0);
+}
+
+// PC
+@media (min-width: 992px) {
+.dropdown-item:hover {
+    background-color: #e0e0e0;
+}
+}
+
+// PC
+@media (min-width: 992px) {
+    .dropdown-item {
+        font-size: 0.7rem;
+        color: black;
+        letter-spacing: initial;
+    }
+}
+
+.dropdown-menu {
+    background-color: initial;
+    border-radius: 0;
+    padding-top: 0;
+}
+
+// PC
+@media (min-width: 992px) {
+    .dropdown-menu {
+        background-color: white;
+        padding-top:8px;
+    }
+}

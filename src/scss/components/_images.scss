@@ -1,0 +1,52 @@
+// 
+// Images
+//
+
+.section2-image__style {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+// PC
+@media (min-width: 992px) {
+.section2-image__style {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+
+
+///FOOTER ICONS
+.img-social{
+    padding-top: 10px;
+    width:1.3rem;
+}
+
+.img-social:hover {
+    transform: scale(1.10, 1.10);
+}
+
+
+.center{
+    display: block;
+    // margin-top: 70px;
+    text-align: center;
+    align-items: center;
+}
+
+.invert-color{
+    filter: invert(100%);
+}

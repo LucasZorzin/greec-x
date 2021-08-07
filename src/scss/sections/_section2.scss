@@ -1,0 +1,17 @@
+// 
+// Section 2
+//
+
+.section2 {
+    background-color: $section2!important;
+    padding-top: 20px!important;
+    margin: none!important;
+}
+
+// PC
+@media (min-width: 992px) {
+    .section2 {
+        padding-top: 0px!important;
+    }
+
+}
