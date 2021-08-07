@@ -3,6 +3,10 @@
   background-image: linear-gradient(to left, #ffffff, #f4f4f4, #eaeaea, #dfdfdf, #d5d5d5) !important;
 }
 
+:root {
+  --bs-blue: #000000!important;
+}
+
 .section__title {
   text-align: center;
   margin-top: 18px;
@@ -11880,13 +11884,7 @@ html, body {
 
 .navbar-custom .navbar-nav .nav-item .nav-link:hover {
   color: rgba(255, 255, 255, 0.99);
-  border: 0.01px solid #00000000 !important;
-}
-
-.navbar-custom .navbar-nav .nav-item .nav-link:hover {
-  color: rgba(255, 255, 255, 0.99);
-  border: 0.01px solid #00000000 !important;
-  background-color: #00000000 !important;
+  background-color: rgba(0, 0, 0, 0.91) !important;
 }
 
 .navbar-custom .navbar-nav .nav-item .nav-link--padding-top {
