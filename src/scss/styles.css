@@ -11880,6 +11880,13 @@ html, body {
 
 .navbar-custom .navbar-nav .nav-item .nav-link:hover {
   color: rgba(255, 255, 255, 0.99);
+  border: 0.01px solid #00000000 !important;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link:hover {
+  color: rgba(255, 255, 255, 0.99);
+  border: 0.01px solid #00000000 !important;
+  background-color: #00000000 !important;
 }
 
 .navbar-custom .navbar-nav .nav-item .nav-link--padding-top {
@@ -12038,7 +12045,7 @@ header.masthead {
   background-image: url("../assets/img/background.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
 }
 
@@ -12089,6 +12096,7 @@ header.masthead .masthead-content .container__logo-size {
   header.masthead {
     padding-top: 14rem;
     padding-bottom: 14rem;
+    background-attachment: fixed;
   }
   header.masthead .masthead-content .masthead-heading {
     margin-top: 0.25rem;
@@ -12112,7 +12120,7 @@ header.masthead-aboutUs {
   background-image: url("../assets/img/about-us.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
 }
 
@@ -12136,6 +12144,7 @@ header.masthead-aboutUs .container__logo-size {
   header.masthead-aboutUs {
     padding-top: 14rem;
     padding-bottom: 14rem;
+    background-attachment: fixed;
   }
   header.masthead-aboutUs .masthead-content .masthead-heading {
     margin-top: 0.25rem;
@@ -12159,7 +12168,7 @@ header.masthead-contact {
   background-image: url("../assets/img/contact.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
 }
 
@@ -12184,6 +12193,7 @@ header.masthead-contact .container__logo-size {
     padding-top: 14rem;
     padding-bottom: 14rem;
     background-position: right;
+    background-attachment: fixed;
   }
   header.masthead-contact .masthead-content .masthead-heading {
     margin-top: 0.25rem;

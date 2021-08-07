@@ -26,6 +26,13 @@
             }
             .nav-link:hover {
                 color: rgba(255, 255, 255, 0.99);
+                border: 0.01px solid #00000000 !important;
+            }
+
+            .nav-link:hover {
+                color: rgba(255, 255, 255, 0.99);
+                border: 0.01px solid #00000000 !important;
+                background-color: #00000000!important;
             }
 
             .nav-link--padding-top {
@@ -97,9 +104,9 @@
 
 // PC
 @media (min-width: 992px) {
-.dropdown-item:hover {
-    background-color: #e0e0e0;
-}
+    .dropdown-item:hover {
+        background-color: #e0e0e0;
+    }
 }
 
 // PC
@@ -121,6 +128,6 @@
 @media (min-width: 992px) {
     .dropdown-menu {
         background-color: white;
-        padding-top:8px;
+        padding-top: 8px;
     }
 }
