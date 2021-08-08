@@ -12015,6 +12015,27 @@ html, body {
   }
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .img-fluid {
+    max-width: 50%;
+    height: auto;
+    margin-left: 10rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+}
+
 .img-social {
   padding-top: 10px;
   width: 1.3rem;

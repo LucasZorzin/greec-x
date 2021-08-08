@@ -27,7 +27,28 @@
     }
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
 
+// Tablet
+@media (min-width: 768px) {
+    .img-fluid {
+    max-width: 50%;
+    height: auto;
+    margin-left: 10rem;
+    }
+}
+    
+// PC
+@media (min-width: 992px) {
+    .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    }
+}
 
 ///FOOTER ICONS
 .img-social{
