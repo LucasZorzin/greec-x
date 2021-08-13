@@ -12088,12 +12088,6 @@ html, body {
     color: rgba(255, 255, 255, 0.99);
     border: none !important;
   }
-  .navbar-custom .navbar-nav .nav-item .nav-link:focus {
-    outline: 0 !important;
-  }
-  .navbar-custom .navbar-nav .nav-item .nav-link:active {
-    outline: 0 !important;
-  }
   .navbar-custom .navbar-nav .nav-item .nav-link--padding-top {
     padding-top: 0.513rem;
   }
