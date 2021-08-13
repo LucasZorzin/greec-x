@@ -102,7 +102,7 @@
         color: white;
         /* margin-top: 50px; */
         font-weight: bold;
-        margin-left: 0px;
+        // margin-left: 0px;
     }
 
     .section2__subtitle {
@@ -115,73 +115,127 @@
     }
 }
 
+// Footer
 .footer {
     .footer__title {
         font-size: 1.5rem;
-        font-family: 'Raleway', sans-serif;
-        text-decoration:none;
-        color:white;
+        font-family: "Raleway", sans-serif;
+        text-decoration: none;
+        color: white;
     }
 
     .footer__title:hover {
-        color:$pink;
+        color: $pink;
     }
 
     .footer__subtitle {
-        font-size: 0.7rem;
-        font-family: 'Raleway', sans-serif;
-        text-decoration:none!important;
-        color:white!important;
+        font-size: 0.9rem;
+        font-family: "Manrope", sans-serif;
+        text-decoration: none !important;
+        color: rgb(173, 173, 173) !important;
     }
 
     .footer__subtitle:hover {
-        color:$pink!important;
+        color: #6c757d !important;
     }
 }
 
-.small{
-    font-size: 0.65rem!important;
-}
-
-.center-text{
-    text-align:center;
-}
-
-.center-text__color{
-    color:$pink;
-}
-
-.container__h1{
-    font-size:1.4rem;
+.margin-title {
+    margin-bottom: 2.5rem !important;
 }
 
 // PC
 @media (min-width: 992px) {
-    .container__h1{
-        font-size:2.5rem;
+    .margin-title {
+        margin-bottom: 1.5rem !important;
     }
 }
 
-.container__h3{
-    font-size:1rem;
+.footer-title {
+    color: #b9b9b9 !important;
+    text-decoration: none;
+    font-size: 1.3rem;
 }
 
 // PC
 @media (min-width: 992px) {
-    .container__h3{
-        font-size:1.5rem;
+    .footer-title {
+        font-size: 1.2rem;
     }
 }
 
+.footer-title:hover {
+    color: #cbcbcb !important;
+}
 
+.footer-subtitles {
+    color: #b9b9b9 !important;
+}
 
+.footer-p {
+    display: none;
+}
 
+// PC
+@media (min-width: 768px) {
+    .footer-p {
+        font-size: 0.9rem;
+        margin-top: 0.85rem;
+        display: block;
+    }
+}
 
+.footer-items {
+    color: #6c757d !important;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase !important;
+    display: block;
+    margin-bottom: 0.3rem;
+}
 
+.footer-items:hover {
+    color: #b9b9b9 !important;
+}
 
+.footer-items--number {
+    @extend.footer-items;
+    font-family: "Manrope", sans-serif;
+}
 
+.small {
+    font-size: 0.65rem !important;
+}
 
+.center-text {
+    text-align: center;
+}
 
+.center-text__color {
+    color: $cool-pink;
+}
+
+.container__h1 {
+    font-size: 1.4rem;
+}
+
+// PC
+@media (min-width: 992px) {
+    .container__h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.container__h3 {
+    font-size: 1rem;
+}
+
+// PC
+@media (min-width: 992px) {
+    .container__h3 {
+        font-size: 1.5rem;
+    }
+}
 
 /// Override Bootstrap typography variables
 

@@ -12,6 +12,10 @@ header.masthead {
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
     .masthead-content {
         z-index: 1;
@@ -25,7 +29,7 @@ header.masthead {
         }
 
         .masthead-subheading {
-            margin-top:0.25rem;
+            margin-top: 0.25rem;
             font-size: 0.8rem;
             font-weight: 500;
             text-shadow: 2px 2px 2px black;
@@ -38,22 +42,20 @@ header.masthead {
     }
 }
 
-
 @media (min-width: 375px) {
     header.masthead {
-        padding-top: 15rem;
         padding-bottom: 19rem;
 
         .masthead-content {
             .masthead-heading {
-                margin-top:0.25rem;
+                margin-top: 0.25rem;
                 font-size: 2rem;
                 font-weight: 500;
                 text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
             }
 
             .masthead-subheading {
-                margin-top:0.25rem;
+                margin-top: 0.25rem;
                 font-size: 0.9rem;
                 font-weight: 500;
                 text-shadow: 2px 2px 2px black;
@@ -62,22 +64,29 @@ header.masthead {
     }
 }
 
+// other tablets / ipad pro
+@media only screen and (min-device-width: 990px) and (max-device-width: 1980px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    header.masthead {
+        height: initial!important;
+    }
+}
 
+// PC
 @media (min-width: 992px) {
     header.masthead {
-        padding-top: 14rem;
-        padding-bottom: 14rem;
+        padding-top: 15rem;
         background-attachment: fixed;
+        height: 100vh;
         .masthead-content {
             .masthead-heading {
-                margin-top:0.25rem;
+                margin-top: 0.25rem;
                 font-size: 2.5rem;
                 font-weight: 500;
                 text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
             }
 
             .masthead-subheading {
-                margin-top:0.25rem;
+                margin-top: 0.25rem;
                 font-size: 0.9rem;
                 font-weight: 500;
                 text-shadow: 2px 2px 2px black;
@@ -85,9 +94,6 @@ header.masthead {
         }
     }
 }
-
-
-
 
 // ABOUT US
 header.masthead-aboutUs {
@@ -116,7 +122,6 @@ header.masthead-aboutUs {
     .container__logo-size {
         width: 90px;
     }
-
 }
 
 @media (min-width: 992px) {
@@ -126,14 +131,14 @@ header.masthead-aboutUs {
         background-attachment: fixed;
         .masthead-content {
             .masthead-heading {
-                margin-top:0.25rem;
+                margin-top: 0.25rem;
                 font-size: 2.5rem;
                 font-weight: 500;
                 text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
             }
 
             .masthead-subheading2 {
-                margin-top:0.25rem;
+                margin-top: 0.25rem;
                 font-size: 0.9rem;
                 font-weight: 500;
                 text-shadow: 2px 2px 2px black;
@@ -141,7 +146,6 @@ header.masthead-aboutUs {
         }
     }
 }
-
 
 // CONTACT
 header.masthead-contact {
@@ -170,7 +174,6 @@ header.masthead-contact {
     .container__logo-size {
         width: 90px;
     }
-
 }
 
 @media (min-width: 992px) {
@@ -182,14 +185,14 @@ header.masthead-contact {
 
         .masthead-content {
             .masthead-heading {
-                margin-top:0.25rem;
+                margin-top: 0.25rem;
                 font-size: 2.5rem;
                 font-weight: 500;
                 text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
             }
 
             .masthead-subheading2 {
-                margin-top:0.25rem;
+                margin-top: 0.25rem;
                 font-size: 0.9rem;
                 font-weight: 500;
                 text-shadow: 2px 2px 2px black;

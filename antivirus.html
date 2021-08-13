@@ -21,13 +21,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <!--Animation CSS-->
+    <link rel="stylesheet" href="./src/css-scss/animate.css">
+    <!--Fontello icon-->
+    <link rel="stylesheet" href="./src/css-scss/fontello.css">
     <!--CSS (includes Bootstrap)-->
-    <link href="./src/scss/styles.css" rel="stylesheet">
+    <link href="./src/css-scss/styles.css" rel="stylesheet">
 </head>
 
 <body class="body-color">
     <header class="header-margin">
-        <!-- Navigation-->
+        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
             <div class="container px-5">
                 <a class="navbar-brand" href="index.html"><img src="./src/assets/img/greec-x_logo.png"
@@ -39,7 +43,8 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link nav-link--padding-top" href="index.html">HOME</a> </li>
                         <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" href="index.html#download">DOWNLOAD</a>
+                                data-bs-toggle="dropdown" aria-expanded="false" href="index.html#download" rel="tooltip"
+                                title="View All Security Apps">DOWNLOAD</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="antivirus.html">ANTIVIRUS</a></li>
                                 <li><a class="dropdown-item" href="vpn.html">VPN</a></li>
@@ -47,8 +52,15 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">SUPPORT & CONTACT</a> </li>
-                        <li class="nav-item"><a class="nav-link nav-link--padding-bottom" href="about-us.html">ABOUT
-                                Greec X</a></li>
+                        <li class="nav-item dropdown nav-item--padding-bottom"><a class="nav-link dropdown-toggle"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                href="information.html">MORE INFORMATION</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="information.html#about-us">ABOUT GREEC X</a></li>
+                                <li><a class="dropdown-item" href="information.html#rewards">GREEC X REWARDS</a></li>
+                                <li><a class="dropdown-item" href="information.html#more">About our antivirus</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -56,7 +68,7 @@
     </header>
 
     <!-- Content section 3-->
-    <section>
+    <section class="min-height">
         <div class="container px-6">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-5">
@@ -72,66 +84,132 @@
                             firmly believe that all people have the right to be safe online, so we offer our free
                             antivirus to millions of people from all over the world.</p>
                         <a href="#!" class="section__button3">
-                            <button class="btn btn-primary section__button3-style">DOWNLOAD</button>
+                            <button
+                                class="btn btn-primary section__button3-style wow animate__animated animate__pulse">DOWNLOAD</button>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Requirements -->
+        <div class="container center requirements">
+            <h3>System requirements</h3>
+            <p>We’re not demanding. All you need is a PC with Windows 10, 8.1, 8 or 7, 1GB RAM and 2 GB of hard disk
+                space. And that’s it.</p>
+            <div>
+                <img width="32" src="./src/assets/img/win.svg" alt="compatibility icon">
+                <span>Windows compatible</span>
+            </div>
+        </div>
+
     </section>
 
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted mt-5 pt-3 footer">
+        <!-- Section: Links  -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto margin-title">
+                        <!-- Content -->
+                        <a href="index.html" class="text-uppercase fw-bold mb-4 footer-title">
+                            <img class="mx-1 pb-1 footer-logo" src="./src/assets/img/greec-x_icon.png" alt="Greec X Logo">Greec X
+                        </a>
+                        <p class="footer-p">
+                            Be free with privacy and security. We protect your devices from malware attacks and threats to privacy.
+                        </p>
+                    </div>
 
-    <!-- Requirements -->
-    <div class="container center requirements">
-        <h3>System requirements</h3>
-        <p>We’re not demanding. All you need is a PC with Windows 10, 8.1, 8 or 7, 1GB RAM and 2 GB of hard disk space. And that’s it.</p>
-        <div>
-            <img width="32" src="./src/assets/img/win.svg" alt="compatibility icon">
-            <span>Windows compatible</span>
-        </div>
-    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 footer-subtitles">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="antivirus.html" class="footer-items">Antivirus</a>
+                        </p>
+                        <p>
+                            <a href="vpn.html" class="footer-items">VPN</a>
+                        </p>
+                        <p>
+                            <a href="browser.html" class="footer-items">Secure Browser</a>
+                        </p>
+                    </div>
 
-    <!-- Footer-->
-    <footer class="mt-5 btn-dark pt-4 text-center footer">
-        <a class="footer__title" href="index.html">GREEC X</a>
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 footer-subtitles">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="index.html#download" class="footer-items">Download</a>
+                        </p>
+                        <p>
+                            <a href="information.html" class="footer-items">Greec X Information</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="footer-items">Support & Contact</a>
+                        </p>                        
+                    </div>
 
-        <!-- Grid container -->
-        <div class="container p-4">
-            <a class="footer__subtitle" href="contact.html"> CONTACT</a>
-
-            <!-- Social media icons -->
-            <section class="mb-4">
-                <!-- WhatsApp -->
-                <a class="btnFooter btn-floating m-2" href="#!" role="button">
-                    <img class="img-social" src="./src/assets/img/whatsapp.png" alt="whatsapp">
-                </a>
-
-                <!-- Twitter -->
-                <a class="btnFooter btn-floating m-2" href="#!" role="button">
-                    <img class="img-social" src="./src/assets/img/twitter.png" alt="twitter">
-                </a>
-
-                <!-- Gmail -->
-                <a class="btnFooter btn-floating m-2" href="#!" role="button">
-                    <img class="img-social" src="./src/assets/img/gmail.png" alt="gmail">
-                </a>
-
-                <!-- Instagram -->
-                <a class="btnFooter btn-floating m-2" href="#!" role="button">
-                    <img class="img-social" src="./src/assets/img/instagram.png" alt="instagram">
-                </a>
-            </section>
-
-            <div class="container px-5">
-                <p class="m-0 text-center text-white small">Copyright &copy; Greec X 2021</p>
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 footer-subtitles">
+                            Get connected with us on
+                        </h6>
+                        <div>
+                            <a class="icon-whatsapp footer-items footer-items--number" href="#!"> +54 9 11 1111 1111</a>
+                            <a class="icon-instagram footer-items" href="#!"> @Greec-x</a>
+                            <a class="icon-twitter footer-items" href="#!"> @Greec-x</a>
+                            <a class="icon-mail footer-items" href="#!"> Contact@greec-x.com</a> 
+                        </div>
+                </div>
             </div>
+        </section>
+
+        <!-- Copyright -->
+        <div class="text-center p-4 footer__copyright">
+            <p class="m-0 text-center text-white small">Copyright &copy; Greec X 2021</p>
+        </div>
+
     </footer>
 
+    <!-- Floating btn -->
+    <div class="floating-btn">
+        <input type="checkbox" id="btn-more">
+        <div class="social">
+            <!-- WhatsApp -->
+            <a href="#!" class="icon-whatsapp"></a>
+            <!-- Instagram -->
+            <a href="#!" class="icon-instagram"></a>
+            <!-- Twitter -->
+            <a href="#!" class="icon-twitter"></a>
+            <!-- Gmail -->
+            <a href="#!" class="icon-mail"></a>
+        </div>
 
-    <!-- Bootstrap core JS-->
+        <div class="btn-more" rel="tooltip" title="Contact us">
+            <label for="btn-more" class="icon-plus"></label>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <!-- Core theme JS -->
+    <script src="./js/scripts.js"></script>
+    <!-- wow -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
