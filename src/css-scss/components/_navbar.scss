@@ -24,7 +24,7 @@
                 letter-spacing: 0.188rem;
                 color: rgba(255, 255, 255, 0.75);
             }
-            
+
             .nav-link:hover {
                 color: rgba(255, 255, 255, 0.99);
             }
@@ -43,7 +43,7 @@
     }
 }
 
-.nav-item--padding-bottom{
+.nav-item--padding-bottom {
     padding-bottom: 15px;
 }
 
@@ -73,7 +73,7 @@
 
                 .nav-link:hover {
                     color: rgba(255, 255, 255, 0.99);
-                    border: none!important;
+                    border: none !important;
                 }
 
                 .nav-link--padding-top {
@@ -83,7 +83,7 @@
         }
     }
 
-    .nav-item--padding-bottom{
+    .nav-item--padding-bottom {
         padding-bottom: 0px;
     }
 }
@@ -95,11 +95,61 @@
     font-family: "Raleway", sans-serif;
     font-size: 0.5rem;
     letter-spacing: 0.188rem;
-    padding: 0.40rem 1rem !important;
+    padding: 0.4rem 1rem !important;
 }
 
 .dropdown-item:hover {
     background-color: rgba(224, 224, 224, 0);
+}
+
+.dropdown,
+.dropdown:focus,
+.dropdown:active,
+.dropdown:link,
+.dropdown:hover,
+.dropdown:visited {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+
+    .dropdown-toggle .dropdown-toggle:focus,
+    .dropdown-toggle:active,
+    .dropdown-toggle:link,
+    .dropdown-toggle:hover,
+    .dropdown-toggle:visited {
+        outline: 0 !important;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        -webkit-touch-callout: none !important;
+        -webkit-user-select: none !important;
+        -khtml-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
+        background-color: rgba(0, 0, 0, 0) !important;
+
+        .show,
+        .show:focus,
+        .show:active,
+        .show:link,
+        .show:hover,
+        .show:visited {
+            outline: 0 !important;
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+            -webkit-touch-callout: none !important;
+            -webkit-user-select: none !important;
+            -khtml-user-select: none !important;
+            -moz-user-select: none !important;
+            -ms-user-select: none !important;
+            user-select: none !important;
+            background-color: rgba(0, 0, 0, 0) !important;
+        }
+    }
 }
 
 // PC
