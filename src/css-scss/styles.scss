@@ -3,7 +3,7 @@
 //
 
 // Import variables
-@import "../scss/_variables"; 
+@import "../css-scss/variables"; 
 
 // Import Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
@@ -22,3 +22,4 @@
 @import "./sections/_section2.scss";
 @import "./sections/_footer.scss";
 @import "./sections/_requirements.scss";
+@import "./sections/_information.scss";

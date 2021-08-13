@@ -28,3 +28,23 @@ html, body {
 .translate {
     transform: translate(10px, 0px)!important;
 }}
+
+:root {
+    --animate-delay: 0.3s;
+}
+
+@media (max-width: 570px){
+.responsive-video{
+display: flex;
+align-items: center;
+justify-content:center;
+text-align: center;
+}
+}
+
+.min-height{
+    min-height: 100vh - 21vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

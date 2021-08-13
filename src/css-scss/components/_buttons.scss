@@ -1,12 +1,18 @@
 //
 // Buttons
 //
+
 .btn {
   border: none !important;
 }
 
 .btn-primary {
   border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  background-image: $boton-background-image-hover2;
 }
 
 .btn-style {
@@ -18,11 +24,13 @@
   letter-spacing: 0.1rem;
   border-radius: 0;
   background-image: $boton-background-image;
+  transition: all .2s!important;
 }
 
 .btn-style:hover {
   transform: scale(1.03, 1.03);
   background-image: $boton-background-image-hover;
+
 }
 
 /// section 2 button
@@ -97,7 +105,7 @@
 }
 
 .section__button3-style:hover {
-  transform: scale(1.03, 1.03);
+  transform: scale(1.01, 1.01);
   background-image: $boton-background-image-hover2;
 }
 
@@ -146,4 +154,59 @@
 
 .black{
   background-color:black;
+}
+
+// FLOATING BTN
+#btn-more{
+  display:none;
+}
+
+.floating-btn{
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.social a, .icon-plus{
+  display:block;
+  text-decoration: none;
+  background: #1c1c1cf0;
+  color: white;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.4);
+  transition: all 500ms;
+}
+
+.social a:hover{
+  background: white;
+  // color: #1c1c1cf0;
+  color: $cool-pink;
+}
+
+.social a{
+  margin-bottom: -15px;
+  opacity:0;
+  visibility: hidden;
+}
+
+#btn-more:checked~ .social a{
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon-plus{
+  cursor:pointer;
+  background: $floating-btn;
+  font-size: 23px;
+}
+
+#btn-more:checked~ .btn-more .icon-plus{
+  transform: rotate(137deg);
+  font-size: 25px;
 }
